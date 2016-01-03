@@ -1,0 +1,221 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include ".\..\..\include\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    ".\\..\\..\\include\\resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DependencyLogic.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,51,0,0
+ PRODUCTVERSION 5,51,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "CompanyName", "HUP AG"
+            VALUE "FileDescription", "DependencyLogic.dll"
+            VALUE "FileVersion", "5, 51, 0, 0"
+            VALUE "hupModul", "SYS"
+            VALUE "hupRevision", "18238"
+            VALUE "hupSource", "svn://hupldev/vl/version/vl/5.51"
+            VALUE "InternalName", "DependencyLogic.dll"
+            VALUE "LegalCopyright", "© 1999-2012 HUP AG"
+            VALUE "LegalTrademarks", "hup"
+            VALUE "OriginalFilename", "DependencyLogic.dll"
+            VALUE "ProductName", "unique publishing"
+            VALUE "ProductVersion", "5, 51"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CYCLIC_REFERENCE    BITMAP                  "res\\cyclic_reference.bmp"
+IDB_DEPENDENCY          BITMAP                  "res\\dependency.bmp"
+IDB_DEPENDENCY_BAD      BITMAP                  "res\\dependency_bad.bmp"
+IDB_EXPORT              BITMAP                  "res\\export.bmp"
+IDB_EXPORT_REFERENCES   BITMAP                  "res\\export_dependencies.bmp"
+IDB_EXPORT_MISSING      BITMAP                  "res\\missing_export.bmp"
+IDB_MODULE              BITMAP                  "res\\module.bmp"
+IDB_MODULE_EXPORTS      BITMAP                  "res\\module_exports.bmp"
+IDB_MODULE_INCOMING     BITMAP                  "res\\module_incoming.bmp"
+IDB_MODULE_OPENED       BITMAP                  "res\\module_open.bmp"
+IDB_MODULE_OUTGOING     BITMAP                  "res\\module_outgoing.bmp"
+IDB_MISSING_TARGET      BITMAP                  "res\\outgoing_missing.bmp"
+IDB_HUP_LOGO            BITMAP                  "res\\hupLogoTrans.bmp"
+IDB_TREEBTNS            BITMAP                  "res\\TREEBTNS.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDNODE_MODULES          "Module"
+    IDNODE_EXPORTS          "Exporte"
+    IDNODE_CYCLIC_CHAIN_ERROR_DEPENDENCIES 
+                            "Abhaengigkeiten der zyklischen Referenz"
+END
+
+STRINGTABLE 
+BEGIN
+    IDNODE_CYCLIC_CHAIN_ERRORS "Zyklische Abhängigkeiten"
+    IDNODE_MODULE_INCOMING_DEPENDENCIES "Eingehende Abhängigkeiten"
+    IDNODE_MODULE_OUTGOING_DEPENDENCIES "Ausgehende Abhängigkeiten"
+    IDNODE_MODULE_EXPORTS   "Exporte des Moduls"
+    IDNODE_DEPENDENCY_TARGET_MODULE "Zielmodul der Abhängigkeit"
+    IDNODE_DEPENDENCY_SOURCE_MODULE "Quellmodul der Abhängigkeit"
+    IDNODE_DEPENDENCY_EXPORTS "Referenzierte Exporte"
+    IDNODE_DEPENDENCIES     "Abhängigkeiten"
+    IDNODE_DEPENDENCY_MISSING_EXPORTS "Fehlende Exporte im Zielmodul"
+    IDNODE_EXPORT_SOURCE_MODULE "Quellmodul des Exports"
+    IDNODE_EXPORT_REFERENCING_DEPENDENCIES 
+                            "Den Export referenzierende Abhängigkeiten"
+    IDNODE_MISSING_EXPORT_ERROR "Fehlender Export"
+    IDS_LOADDB_PROGRESSDLGTITLE "Lade Datenbank %1"
+    IDS_LOADDB_PARSINGDOCUMENT "XML-Daten werden initialisiert."
+    IDS_LOADDB_LOADINGMODULES "Module werden deserialisiert (%1!i!/%2!i!)"
+    IDS_LOADDB_LOADINGDEPENDENCIES 
+                            "Abhängigkeiten werden deserialisiert (%1!i!/%2!i!)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADDB_NOCANCEL     "Der Ladevorgang kann nicht abgebrochen werden."
+    IDS_MISSING_FILE_OR_PARSER_ERROR 
+                            "Die Datenbank in '%1' ist fehlerhaft oder existiert nicht."
+    IDS_BADDB               "Fehler beim Laden der Datenbank!"
+    IDNODE_SYSTEM           "Gesamtes System"
+    IDNODE_RECURSIVE        "Rekursion"
+    IDNODE_SELECTION        "In Auswahl"
+    IDS_PATCHTEST_NEWERRORS "Es sind %1!i! neue Inkompatibilitäten für Abhängigkeiten von und zu '%2' im Gegensatz zu '%3' hinzugekommen."
+    IDS_PATCHTEST_GOOD      "Patch '%1' behebt %2!i! Abhängigkeitenprobleme."
+    IDS_PATCHTEST_OK        "Patch '%1' ist neutral. '%2!i!' Probleme verbleiben."
+    IDS_PATCH_WARNING       "Ergebnis von Patch '%1'"
+    IDS_PATCH_IN_PROGRESS   "Patch wird eingebettet..."
+    IDS_PATCH_COLLECTING_INFORMATION "%1 ..."
+    IDS_DELETESYSTEM        "System wird entladen...."
+    IDS_DELETESYSTEM_MODULES "Module werden entladen..."
+    IDS_DELETESYSTEM_DEPENDENCIES "Abhängigkeiten werden entladen...."
+    IDS_PATCH_LOG_ANNOUNCEMENT 
+                            "____________________________________________________________________________\r\nHUP DependencyStudio\r\nDatenbank: %1\r\nInseriere %2!i! Modul(e):\r\n\t%3"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATCH_LOG_MODULE_CAUSING "%1!i! Problem(e) wurden verursacht:"
+    IDS_PATCH_LOG_MODULE_OK "Neutral. Keine neuen Probleme erkannt."
+    IDS_PATCH_LOG_COMPLETE  "Patch eingebettet.\r\n____________________________________________________________________________"
+    IDS_PATCH_LOG_TITLE     "Gesammelte Informationen:"
+    IDS_CYCLICREFSEARCH_TITLE "Zyklische Referenzen werden ermittelt"
+    IDS_CYCLICREFSEARCH_ANALYZING 
+                            "Analysiere Abhängigkeiten (%1!i! von %2!i!)"
+    IDS_CYCLICREFSEARCH_FOUND "Gefunden: %1"
+    IDS_MODULE_ERROR_UNRESOLVED_EXPORT "\t%1: ""%2"" fehlt in %3\r\n"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DependencyLogic.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

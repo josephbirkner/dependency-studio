@@ -1,0 +1,305 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\DependencyStudio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEPENDENCYSTUDIO_DIALOG DIALOGEX 0, 0, 787, 434
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HUP DependencyStudio"
+MENU IDR_DEPENDENCYSTUDIO_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_QUERY,7,370,205,14,ES_AUTOHSCROLL
+    CONTROL         "Groß/Kleinschreibung beachten",IDC_CHECK_CASESENSITIVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,387,205,10
+    CONTROL         "Nur ganze Wörter suchen",IDC_CHECK_ONLYWORDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,399,205,10
+    CONTROL         "",IDC_TREE_SUBJECTS,"SysTreeView32",TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,17,205,329
+    PUSHBUTTON      "Abfrage",IDC_BUTTON_SEARCH,7,411,205,17
+    GROUPBOX        "Einschränkung",IDC_GROUP_SEARCH_PARAMS,7,358,205,69,NOT WS_VISIBLE
+    LTEXT           "CColumnTreeControl",IDC_TREE_RESULTS,224,17,556,410,WS_BORDER
+    GROUPBOX        "Abfrage",IDC_GROUP_QUERY,7,3,205,348,NOT WS_VISIBLE
+END
+
+IDD_TESTPAGE DIALOGEX 0, 0, 787, 434
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_SUBJECTS,"SysTreeView32",TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,17,205,410
+    LTEXT           "CColumnTreeControl",IDC_TREE_RIGHT,224,17,556,410,WS_BORDER
+    GROUPBOX        "Abfrage",IDC_TREE_LEFT,7,3,205,348,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDD_DEPENDENCYSTUDIO_DIALOG ICON                    "res\\logo.ico"
+IDI_LOGO_SMALL          ICON                    "res\\LogoSmall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DEPENDENCYSTUDIO_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 780
+        VERTGUIDE, 7
+        VERTGUIDE, 15
+        VERTGUIDE, 22
+        VERTGUIDE, 175
+        VERTGUIDE, 198
+        VERTGUIDE, 207
+        VERTGUIDE, 212
+        VERTGUIDE, 224
+        VERTGUIDE, 773
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 427
+        HORZGUIDE, 7
+        HORZGUIDE, 17
+        HORZGUIDE, 346
+        HORZGUIDE, 351
+    END
+
+    IDD_TESTPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 780
+        VERTGUIDE, 7
+        VERTGUIDE, 15
+        VERTGUIDE, 22
+        VERTGUIDE, 175
+        VERTGUIDE, 198
+        VERTGUIDE, 207
+        VERTGUIDE, 212
+        VERTGUIDE, 224
+        VERTGUIDE, 773
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 427
+        HORZGUIDE, 7
+        HORZGUIDE, 17
+        HORZGUIDE, 346
+        HORZGUIDE, 351
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DEPENDENCYSTUDIO_MENU MENU 
+BEGIN
+    POPUP "Datenbank"
+    BEGIN
+        MENUITEM "Laden...",                    ID_LOAD_DATABASE
+        POPUP "Zuletzt Geöffnet"
+        BEGIN
+            MENUITEM "RecentList",                  ID_ZULETZTGE32804
+        END
+        MENUITEM "Schließen",                   ID_CLOSE_DATABASE
+        MENUITEM "Speichern",                   ID_SAVE_DATABASE
+        MENUITEM "Speichern unter...",          ID_DATENBANK_SPEICHERNUNTER
+    END
+    POPUP "Abfrage"
+    BEGIN
+        MENUITEM "Abfrageergebnis exportieren...", ID_RESULT_EXPORT
+        MENUITEM "Abfrage als Makro speichern", ID_ANSICHT_ALS
+        MENUITEM "Aktualisieren + Diff",        ID_ABFRAGE_AKTUALISIEREN
+        MENUITEM "Aktualisieren",               ID_ABFRAGE_AKTUALISIEREN32792
+        MENUITEM SEPARATOR
+        MENUITEM "Neu",                         ID_ABFRAGE_NEU
+        MENUITEM "Duplizieren",                 ID_ABFRAGE_DUPLIZIEREN
+        MENUITEM "Schließen",                   ID_ABFRAGE_SCHLIE32796
+        MENUITEM "Zurück",                      ID_ABFRAGE_ZUR32797
+        MENUITEM "Vorwärts",                    ID_ABFRAGE_VORW32798
+    END
+    POPUP "Modul"
+    BEGIN
+        MENUITEM "Patch testen...",             ID_MODUL_PATCHTESTEN
+        MENUITEM "Patch einspielen",            ID_MODUL_PATCHEINSPIELEN
+        MENUITEM "Hinzufügen",                  ID_MODUL_HINZUF32783
+        MENUITEM "Entfernen",                   ID_MODUL_ENTFERNEN
+        MENUITEM "Aktualisieren",               ID_MODUL_AKTUALISIEREN
+    END
+    POPUP "Hilfe"
+    BEGIN
+        MENUITEM "About...",                    ID_ABOUT
+        MENUITEM "Benutzerhilfe...",            ID_USERHELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,51,0,0
+ PRODUCTVERSION 5,51,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "CompanyName", "HUP AG"
+            VALUE "FileDescription", "DependencyStudio.exe"
+            VALUE "hupSource", "svn://hupldev/vl/version/vl/5.51"
+            VALUE "hupRevision", "18238"
+            VALUE "hupModul", "SYS"
+            VALUE "FileVersion", "5, 51, 0, 0"
+            VALUE "InternalName", "DependencyStudio.exe"
+            VALUE "LegalCopyright", "© 2012 HUP AG"
+            VALUE "LegalTrademarks", "hup"
+            VALUE "OriginalFilename", "DependencyStudio.exe"
+            VALUE "ProductName", "unique publishing"
+            VALUE "ProductVersion", "5, 51"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CANCELFILTER        BITMAP                  "res\\delete.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CREATEDB_OVERWRITE  "Soll die Datei '%1' überschrieben werden?"
+    IDS_CREATEDB            "Neue Datenbank erstellen"
+    IDS_CREATEDB_PROGRESSDLGTITLE "Datenbank '%1' wird erstellt ..."
+    IDS_CREATEDB_PROCESSINGMODULE "Modul '%1' wird verarbeitet ..."
+    IDS_CREATEDB_DONECOUNT  "Modul %1!u! von %2!u!"
+    IDS_UNSAVED_CHANGES     "Es gibt ungespeicherte Änderungen!"
+    IDS_SAVE_BEFORE_CLOSE   "Sollen die Änderungen vor dem Speichern geschlossen werden?"
+    IDS_TITLE_PLAIN         "HUP DependencyStudio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_LOADED        "HUP DependencyStudio - '%1' unter '%2'"
+    IDS_QUERY_PARAM_GROUP_TITLE "Einschränkung für Knoten '%1'"
+    IDS_RELOAD_DATABASE     "Soll die Datenbank '%1' neu geladen werden?\r\nDieser Vorgang kann einige Zeit in Anspruch nehmen."
+    IDS_WARNING             "Warnung!"
+    IDS_ABOUT_TEXT          "DependencyStudio v1.1\r\n© HUP AG 2013\r\nww.hup.de"
+    IDS_ABOUT               "About"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif
+#include "res\DependencyStudio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
